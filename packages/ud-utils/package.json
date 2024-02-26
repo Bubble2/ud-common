@@ -1,0 +1,31 @@
+{
+    "name": "ud-utils",
+    "version": "0.0.2",
+    "description": "",
+    "type": "module",
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "types": "src/index.ts",
+    "files": [
+        "dist",
+        "lib",
+        "es",
+        "src",
+        "README.md",
+        "tsconfig.json"
+    ],
+    "scripts": {
+        "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
+        "build:commonjs": "rollup -c --environment BUILD_ENV:commonjs",
+        "build:es": "rollup -c --environment BUILD_ENV:es",
+        "build:umd": "rollup -c --environment BUILD_ENV:development",
+        "build:umd:min": "rollup -c --environment BUILD_ENV:production",
+        "tsdoc2md": "node ./tsdoc2md.cjs"
+    },
+    "keywords": [
+        "ud-utils",
+        "utils"
+    ],
+    "author": "zhaodong.guo",
+    "license": "ISC"
+}

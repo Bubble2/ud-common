@@ -1,0 +1,28 @@
+{
+  "name": "ud-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx -y only-allow pnpm",
+    "changeset": "changeset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "jsdoc": "^3.6.11",
+    "jsdoc-to-markdown": "^8.0.0",
+    "rollup": "^3.25.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "tsdoc-markdown": "^0.3.0",
+    "typescript": "^5.1.3"
+  }
+}

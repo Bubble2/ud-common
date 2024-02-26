@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "lib": [
+            "es2019",
+            "dom"
+        ],
+        "strict": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "downlevelIteration": true
+    },
+    "include": [
+        "./typings.d.ts",
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
